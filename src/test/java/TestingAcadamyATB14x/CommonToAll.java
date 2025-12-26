@@ -7,20 +7,26 @@ public class CommonToAll {
     //common functionality for all test cases
     public FirefoxDriver driver;
 
-    public void OpenBrowser(WebDriver driver, String url){
+    public void openBrowser(WebDriver driver, String url){
         driver.get(url);
         driver.manage().window().maximize();
     }
 
-    public void CloseBrowser(WebDriver driver){
+    public void closeBrowser(WebDriver driver){
         try{
             Thread.sleep(5000);
         }
         catch (InterruptedException e){
             throw new RuntimeException(e);
         }
+
         driver.quit();
     }
-
-
+    public void customWait(int time) {
+        try {
+            Thread.sleep(time);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

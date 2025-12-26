@@ -16,7 +16,7 @@ public class Test_Selenium_Project1 extends CommonToAll {
 
     public void test_verify_text(){
         WebDriver driver = new FirefoxDriver();
-        OpenBrowser(driver,"https://katalon-demo-cura.herokuapp.com");
+        openBrowser(driver,"https://katalon-demo-cura.herokuapp.com");
         if(driver.getPageSource().contains("CURA Healthcare Service")){
             System.out.println("Test case Passed");
             Assert.assertTrue(true);
@@ -25,7 +25,7 @@ public class Test_Selenium_Project1 extends CommonToAll {
             System.out.println("Test case Failed");
             Assert.assertTrue(false);
         }
-        CloseBrowser(driver);
+        closeBrowser(driver);
     }
 
 }
