@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Test_Selenium20_MiniProject extends CommonToAll {
@@ -31,6 +32,12 @@ public class Test_Selenium20_MiniProject extends CommonToAll {
         Thread.sleep(3000);
         WebElement button = driver.findElement(By.xpath("//button"));
         button.click();
+
+        WebElement h56 = driver.findElement(By.xpath("//span[@class=\"oxd-text oxd-text--h6 oxd-topbar-header-breadcrumb-module\""));
+        Assert.assertEquals(h56.getText(),"PIM");
+
+
+        closeBrowser(driver);
 
 
     }
