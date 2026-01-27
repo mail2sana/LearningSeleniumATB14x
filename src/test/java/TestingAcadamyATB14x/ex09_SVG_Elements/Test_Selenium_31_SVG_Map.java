@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class Test_Selenium_SVG_Difficult {
+public class Test_Selenium_31_SVG_Map {
     @Test
     public void testSVGDiff(){
 
@@ -24,7 +24,6 @@ public class Test_Selenium_SVG_Difficult {
             if (states.getAttribute("aria-label").contains("Tamil Nadu")){
                 states.click();
             }
-
         }
     }
 }

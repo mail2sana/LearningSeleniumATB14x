@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 import java.util.List;
 
-public class Test_Selenium_31_SvgElement1 {
+public class Test_Selenium_30_SvgElement1 {
 
     @Test
 
